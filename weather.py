@@ -9,7 +9,7 @@ def get_weather(loc):
     querystring = {"q":loc["location"],"lat":"0","lon":"0","id":"2172797","lang":"null","units":"\"metric\" or \"imperial\"","mode":"xml, html"}
 
     headers = {
-        'x-rapidapi-key': "232ca168b2msh67264d324a19c26p156a31jsnc112743d858a",
+        'x-rapidapi-key': "api_key",
         'x-rapidapi-host': "community-open-weather-map.p.rapidapi.com"
         }
 
