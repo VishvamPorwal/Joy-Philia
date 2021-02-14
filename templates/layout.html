@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Joy-Philia</title>
+</head>
+{% block style %}
+
+{% endblock %}
+<body class="p-3 mb-2 bg-dark bg-gradient text-white">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="navbar-brand" href="/">
+                <img src="https://i.ibb.co/F3R2Bjq/logo.png" alt="" width="200" height="150">
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/inside" role="button"
+                aria-expanded="false">Indoors</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/music">Music</a></li>
+                <li><a class="dropdown-item" href="/cook">Cooking</a></li>
+                <li><a class="dropdown-item" href="/book">Books</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/outside">Outdoors</a>
+        </li>
+    </ul>
+    {% block body %}
+
+    {% endblock %}
+</body>
+</html>
