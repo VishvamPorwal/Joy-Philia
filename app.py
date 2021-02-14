@@ -38,9 +38,9 @@ def music():
 
 @app.route("/cook")
 def cook():
-    return render_template("music.html")
+    return render_template("cook.html")
 
 
 @app.route("/book")
 def book():
-    return render_template("music.html")
+    return render_template("book.html")
