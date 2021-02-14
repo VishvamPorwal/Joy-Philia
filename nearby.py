@@ -8,7 +8,7 @@ def get_nearby(location):
     querystring = {"location":location["latlon"],"radius":"1000", "type":"restaurant"}
 
     headers = {
-        'x-rapidapi-key': "232ca168b2msh67264d324a19c26p156a31jsnc112743d858a",
+        'x-rapidapi-key': "api_key",
         'x-rapidapi-host': "trueway-places.p.rapidapi.com"
         }
 
