@@ -3,7 +3,7 @@ import json
 
 def get_location():
 
-    url = "http://api.ipstack.com/check?access_key=0133d62f375f7fafd82b1d5d44001d22"
+    url = "http://api.ipstack.com/check?access_key=api_key"
 
 
     response = requests.request("GET", url)
