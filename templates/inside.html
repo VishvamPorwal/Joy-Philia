@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block style %}
+<style>
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #f7c900;
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+    <div class="text-center">
+        <h2 style="color: rgb(255, 238, 0);">Putting forward to be indoors ..?</h2>
+        <p class="fst-italic h4" style="color: yellow;"><em>Make sure of being cherished inside those doors and get engaged
+                in your fondness...</em></p>
+        </p>
+    
+        <figure>
+            <div class="container">
+                <img src="https://seeninthecity.co.uk/wp-content/uploads/2020/05/work-from-home-1068x713.jpg" alt="Inside"
+                    style="width:350px;height:250px; padding: 20px;">
+                <div class="overlay">
+                    <a href="/inside">
+                        <div class="text">Music</div>
+                    </a>
+                </div>
+            </div>
+    
+            <figcaption>
+                <blockquote class="blockquote">
+                    Playing your favorite instrument
+                </blockquote>
+            </figcaption>
+        </figure>
+    
+        <figure>
+            <div class="container">
+                <img src="https://images.unsplash.com/photo-1605522469906-3fe226b356bc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fGVhc3klMjBjb29raW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="Inside" style="width:350px;height:250px;padding: 20px;">
+                <div class="overlay">
+                    <a href="/inside">
+                        <div class="text">Cooking </div>
+                    </a>
+                </div>
+            </div>
+    
+            <figcaption>
+                <blockquote class="blockquote">
+                    Cooking somethings new for yourself and your loved ones
+                </blockquote>
+            </figcaption>
+        </figure>
+        <figure>
+            <div class="container">
+                <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzV8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="Inside" style="width:350px;height:250px;padding: 20px;">
+                <div class="overlay">
+                    <a href="/inside">
+                        <div class="text">Books</div>
+                    </a>
+                </div>
+            </div>
+    
+            <figcaption>
+                <blockquote class="blockquote">
+                    Read the readable
+                </blockquote>
+            </figcaption>
+        </figure>
+    
+    </div>
+{% endblock %}
